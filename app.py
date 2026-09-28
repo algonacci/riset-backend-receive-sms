@@ -5,7 +5,10 @@ import threading
 from datetime import datetime
 from pathlib import Path
 
+from dotenv import load_dotenv
 from flask import Flask, jsonify, request
+
+load_dotenv()
 
 app = Flask(__name__)
 
